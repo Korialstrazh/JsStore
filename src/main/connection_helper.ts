@@ -47,7 +47,7 @@ export class ConnectionHelper {
   private $worker;
 
   private get jsstoreWorker() {
-    return this.$worker || self['JsStoreWorker'];
+    return this.$worker || self?.['JsStoreWorker'];
   }
 
   constructor(worker?: Worker) {
